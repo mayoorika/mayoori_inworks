@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>M2C</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<script src="sample-registration-form-validation.js"></script>
+<style>
+h1 {
+margin-left: 70px;
+}
+form li {
+list-style: none;
+margin-bottom: 5px;
+}
+
+form ul li label{
+float: left;
+clear: left;
+width: 100px;
+text-align: right;
+margin-right: 10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+
+form ul li input, select, span {
+float: left;
+margin-bottom: 10px;
+}
+
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+}
+
+[type="submit"] {
+clear: left;
+margin: 20px 0 0 230px;
+font-size:18px
+}
+body{
+
+  padding-left:25%;
+}
+p {
+margin-left: 70px;
+font-weight: bold;
+
+}
+</style>
+<style>
+div {
+    background-color: lightgrey;
+    width: 600px;
+    border: 15px solid black;
+    padding: 25px;
+    margin: 25px;
+    align:justify;
+}
+</style>
+</head>
+<body>
+ <h1>M2C Registration Form</h1> 
+
+
+
+
+
+
+    <div>  <form method="post" action="/addname">
+
+            <li><label for="userid"> National Identity Card id:</label></li>
+            <li><input type="text" name="userid" size="12" required /></li>
+            <li><label for="username">Name:</label></li>
+            <li><input type="text" name="username" size="50" required/></li>
+            <li><label for="address">Address:</label></li>
+            <li><input type="text" name="address" size="50" required /></li>
+            <li><label for="country">City:</label></li>
+            <li><select name="country">
+            <option selected="" value="Default" required>(Please select a city)</option>
+            <option value="jaffna"> Jaffna </option>
+            <option value="AL"> Kilinochchi </option>
+            <option value="DZ"> Mannar </option>
+            <option value="AS"> Mullaitivu </option>
+            <option value="AD"> Vavuniya </option>
+            <option value="AF"> Puttalam </option>
+            <option value="AL"> Kurunegala </option>
+            <option value="DZ"> Gampaha </option>
+            <option value="AS"> Colombo </option>
+            <option value="AD"> Kalutara </option>
+            <option value="AF"> Anuradhapura </option>
+            <option value="AL"> Polonnaruwa </option>
+            <option value="DZ"> Matale </option>
+            <option value="AS"> Kandy </option>
+            <option value="AD"> Nuwara Eliya </option>
+            <option value="AF"> Kegalle </option>
+            <option value="AL"> Ratnapura </option>
+            <option value="DZ"> Trincomalee </option>
+            <option value="AS"> Batticaloa </option>
+            <option value="AD"> Ampara </option>
+            <option value="AF"> Badulla </option>
+            <option value="AL"> Monaragala </option>
+            <option value="DZ"> Hambantota </option>
+            <option value="AS"> Matara </option>
+            <option value="AD"> Galle </option>
+          </select></li><br><br><br>
+            <li><label for="zip"> Phone No:</label></li>
+            <li><input type="text" name="zip" required/></li>
+            <li><label for="email">Email:</label></li>
+            <li><input type="text" name="email" size="50" required /></li>
+            <li><label id="gender">Sex:</label></li>
+            <li><input type="radio" name="msex" value="Male"  /><span>Male</span></li>
+            <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+            <li><label for="desc">About:</label></li>
+            <li><textarea name="desc" id="desc"></textarea></li>
+            <br><br><br><br><br><br><br><br><br><br>
+            <li><input type="submit" name="submit" value="Submit" /></li>
+
+
+        </form></div>
+    </body>
+</html>
